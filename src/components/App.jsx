@@ -55,13 +55,13 @@ export class App extends Component {
     return (
       <div>
         <h1>Phonebook</h1>
-        <Form onSubmit={this.onHendlerSubmit}></Form>
+        <Form onSubmit={this.onHendlerSubmit} />
         <Contacts
           contacts={visibleContacts}
           filter={filter}
           onFilterChange={this.onFilterChange}
           onDeleteClick={this.onDeleteClick}
-        ></Contacts>
+        />
       </div>
     );
   }
