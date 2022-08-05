@@ -54,6 +54,7 @@ export class App extends Component {
     const visibleContacts = this.calculateContacts();
     return (
       <div>
+        <h1>Phonebook</h1>
         <Form onSubmit={this.onHendlerSubmit}></Form>
         <Contacts
           contacts={visibleContacts}

@@ -1,10 +1,11 @@
 import PropTypes from 'prop-types';
+import css from './Filter.module.css';
 
 const Filter = ({ filter, onFilterChange }) => {
   return (
     <div>
-      <label htmlFor="">
-        Find Contact
+      <label htmlFor="" className={css.filter}>
+        <span>Find Contact</span>
         <input type="text" value={filter} onChange={onFilterChange} />
       </label>
     </div>
