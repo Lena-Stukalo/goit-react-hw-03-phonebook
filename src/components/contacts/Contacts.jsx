@@ -29,9 +29,9 @@ const Contacts = ({ contacts, filter, onFilterChange, onDeleteClick }) => {
 Contacts.propTypes = {
   contacts: PropTypes.arrayOf(
     PropTypes.shape({
-      name: PropTypes.string.isRequired,
+      name: PropTypes.string,
       number: PropTypes.string,
-      id: PropTypes.string.isRequired,
+      id: PropTypes.string,
     })
   ),
   filter: PropTypes.string,
